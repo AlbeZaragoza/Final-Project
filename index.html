@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 100 Mejores Películas de Todos los Tiempos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cortinas de cine mejoradas -->
+    <div class="curtain-overlay">
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <div class="curtain-text">
+            <h1>Las 100 Mejores Películas</h1>
+            <p>de Todos los Tiempos</p>
+        </div>
+    </div>
+
+    <!-- Header profesional -->
+    <header class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Las 100 Mejores Películas</h1>
+                <p class="hero-subtitle">Una celebración del séptimo arte que reúne las obras maestras cinematográficas
+                    de todos los tiempos</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100</span>
+                        <span class="stat-label">Películas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label">Años</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Directores</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToMovies()">Explorar Películas</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación profesional -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Cinema 100</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#movies" class="nav-link">Películas</a></li>
+                <li><a href="#decades" class="nav-link">Décadas</a></li>
+                <li><a href="#directors" class="nav-link">Directores</a></li>
+                <li><a href="#about" class="nav-link">Acerca de</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <main class="main-content">
+        <!-- Top 10 expandido -->
+        <section id="top10" class="top-section">
+            <h2 class="section-title">Top 10 Películas Legendarias</h2>
+            <div class="top-intro">
+                <p>Las diez obras maestras que han definido el séptimo arte y continúan inspirando a cineastas de todo
+                    el mundo.</p>
+            </div>
+
+            <div class="movie-grid top-grid">
+                <div class="movie-card rank-1" data-rank="1">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">1</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La obra maestra de Orson Welles que revolucionó el lenguaje
+                                cinematográfico.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Ciudadano Kane</h3>
+                        <p class="year">1941</p>
+                        <p class="director">Orson Welles</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">119 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card rank-2" data-rank="2">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">2</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">El romance eterno en tiempos de guerra que conquistó corazones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Casablanca</h3>
+                        <p class="year">1942</p>
+                        <p class="director">Michael Curtiz</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">102 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card rank-3" data-rank="3">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">3</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La saga familiar que redefinió el cine de gángsters para
+                                siempre.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>El Padrino</h3>
+                        <p class="year">1972</p>
+                        <p class="director">Francis Ford Coppola</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">175 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="4">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">4</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">El thriller psicológico de Hitchcock que explora la obsesión y
+                                el deseo.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Vértigo</h3>
+                        <p class="year">1958</p>
+                        <p class="director">Alfred Hitchcock</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">128 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="5">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">5</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La reflexión autobiográfica de Fellini sobre el arte y la
+                                creatividad.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>8½</h3>
+                        <p class="year">1963</p>
+                        <p class="director">Federico Fellini</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">138 min</span>
+                            <span class="country">🇮🇹 Italia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="6">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">6</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">El musical que celebra la alegría pura del cine y la danza.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Cantando Bajo la Lluvia</h3>
+                        <p class="year">1952</p>
+                        <p class="director">Gene Kelly & Stanley Donen</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">103 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="7">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">7</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La épica aventura de David Lean en el desierto árabe.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Lawrence de Arabia</h3>
+                        <p class="year">1962</p>
+                        <p class="director">David Lean</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">228 min</span>
+                            <span class="country">🇬🇧 Reino Unido</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="8">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">8</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La continuación que superó al original en profundidad y
+                                complejidad.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>El Padrino II</h3>
+                        <p class="year">1974</p>
+                        <p class="director">Francis Ford Coppola</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">202 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="9">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">9</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">Tarantino revoluciona el cine con narrativa no lineal y
+                                diálogos únicos.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Pulp Fiction</h3>
+                        <p class="year">1994</p>
+                        <p class="director">Quentin Tarantino</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">154 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-rank="10">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder"></div>
+                        <div class="rank-badge">10</div>
+                        <div class="movie-overlay">
+                            <p class="movie-description">La pesadilla de la guerra de Vietnam vista por Coppola.</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Apocalipsis Now</h3>
+                        <p class="year">1979</p>
+                        <p class="director">Francis Ford Coppola</p>
+                        <div class="rating">★★★★★</div>
+                        <div class="movie-stats">
+                            <span class="duration">147 min</span>
+                            <span class="country">🇺🇸 EE.UU.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista completa -->
+        <section id="complete-list" class="complete-list-section">
+            <h2 class="section-title">Lista Completa de las 100 Mejores</h2>
+            <div class="list-controls">
+                <div class="search-container">
+                    <input type="text" id="movie-search" placeholder="Buscar película..." class="search-input">
+                    <button class="search-btn">Buscar</button>
+                </div>
+                <div class="filter-container">
+                    <select id="decade-filter" class="filter-select">
+                        <option value="">Todas las décadas</option>
+                        <option value="1940s">1940s</option>
+                        <option value="1950s">1950s</option>
+                        <option value="1960s">1960s</option>
+                        <option value="1970s">1970s</option>
+                        <option value="1980s">1980s</option>
+                        <option value="1990s">1990s</option>
+                        <option value="2000s">2000s</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="complete-movie-grid" id="complete-movie-list">
+                <!-- Se llenará dinámicamente con JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" id="prev-page">← Anterior</button>
+                <span class="page-info">Página <span id="current-page">1</span> de <span
+                        id="total-pages">10</span></span>
+                <button class="page-btn" id="next-page">Siguiente →</button>
+            </div>
+        </section>
+
+        <!-- Películas por décadas -->
+        <section id="decades" class="decades-section">
+            <h2 class="section-title">Por Décadas</h2>
+            <div class="decades-container">
+                <div class="decade-tab active" data-decade="1940s">1940s</div>
+                <div class="decade-tab" data-decade="1950s">1950s</div>
+                <div class="decade-tab" data-decade="1960s">1960s</div>
+                <div class="decade-tab" data-decade="1970s">1970s</div>
+                <div class="decade-tab" data-decade="1980s">1980s</div>
+                <div class="decade-tab" data-decade="1990s">1990s</div>
+                <div class="decade-tab" data-decade="2000s">2000s</div>
+            </div>
+
+            <div class="decade-content active" id="content-1940s">
+                <div class="movie-list">
+                    <div class="movie-item">
+                        <span class="rank">#1</span>
+                        <span class="title">Ciudadano Kane</span>
+                        <span class="year">1941</span>
+                    </div>
+                    <div class="movie-item">
+                        <span class="rank">#2</span>
+                        <span class="title">Casablanca</span>
+                        <span class="year">1942</span>
+                    </div>
+                    <div class="movie-item">
+                        <span class="rank">#15</span>
+                        <span class="title">Los Mejores Años de Nuestras Vidas</span>
+                        <span class="year">1946</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Géneros -->
+        <section id="genres" class="genres-section">
+            <h2 class="section-title">Por Géneros</h2>
+            <div class="genre-grid">
+                <div class="genre-card drama">
+                    <h3>Drama</h3>
+                    <div class="genre-count">35 películas</div>
+                </div>
+                <div class="genre-card thriller">
+                    <h3>Thriller</h3>
+                    <div class="genre-count">18 películas</div>
+                </div>
+                <div class="genre-card romance">
+                    <h3>Romance</h3>
+                    <div class="genre-count">12 películas</div>
+                </div>
+                <div class="genre-card scifi">
+                    <h3>Ciencia Ficción</h3>
+                    <div class="genre-count">8 películas</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directores Legendarios Mejorado -->
+        <section id="directors" class="directors-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Directores Legendarios</h2>
+                    <p class="section-description">Los visionarios que han definido el lenguaje cinematográfico y creado
+                        las obras maestras más influyentes de la historia</p>
+                </div>
+
+                <!-- Director destacado principal -->
+                <div class="featured-director">
+                    <div class="director-spotlight">
+                        <div class="director-image">
+                            <div class="director-avatar-large">AH</div>
+                            <div class="director-glow"></div>
+                        </div>
+                        <div class="director-content">
+                            <div class="director-header">
+                                <h3 class="director-name">Alfred Hitchcock</h3>
+                                <p class="director-nickname">"El Maestro del Suspense"</p>
+                                <div class="director-years">1899 - 1980</div>
+                            </div>
+                            <div class="director-description">
+                                <p>Revolucionó el thriller cinematográfico con técnicas innovadoras como el "MacGuffin"
+                                    y el montaje psicológico. Sus 39 películas incluyen algunas de las obras más
+                                    estudiadas en la historia del cine.</p>
+                            </div>
+                            <div class="director-achievements">
+                                <div class="achievement">
+                                    <span class="achievement-number">7</span>
+                                    <span class="achievement-label">Películas en Top 100</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">5</span>
+                                    <span class="achievement-label">Nominaciones Oscar</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">39</span>
+                                    <span class="achievement-label">Películas Dirigidas</span>
+                                </div>
+                            </div>
+                            <div class="director-masterpieces">
+                                <h4>Obras Maestras</h4>
+                                <div class="masterpiece-list">
+                                    <span class="masterpiece">Vértigo</span>
+                                    <span class="masterpiece">Psicosis</span>
+                                    <span class="masterpiece">La Ventana Indiscreta</span>
+                                    <span class="masterpiece">Con la Muerte en los Talones</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de otros directores legendarios -->
+                <div class="directors-grid">
+                    <div class="director-card premium">
+                        <div class="card-header">
+                            <div class="director-avatar">AK</div>
+                            <div class="director-info">
+                                <h3>Akira Kurosawa</h3>
+                                <p class="director-title">El Emperador del Cine</p>
+                                <p class="director-origin">Japón • 1910-1998</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Maestro del cine épico japonés, influyó profundamente en directores
+                                occidentales como Spielberg y Lucas.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">5</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">30</span>
+                                    <span class="label">Películas</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>Los Siete Samuráis</span>
+                                <span>Rashomon</span>
+                                <span>Ikiru</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="director-card premium">
+                        <div class="card-header">
+                            <div class="director-avatar">FF</div>
+                            <div class="director-info">
+                                <h3>Federico Fellini</h3>
+                                <p class="director-title">El Poeta del Cine</p>
+                                <p class="director-origin">Italia • 1920-1993</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Creador de un universo cinematográfico único, mezcló realidad y
+                                fantasía de manera magistral.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">4</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">24</span>
+                                    <span class="label">Películas</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>8½</span>
+                                <span>La Dolce Vita</span>
+                                <span>Amarcord</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="director-card">
+                        <div class="card-header">
+                            <div class="director-avatar">FC</div>
+                            <div class="director-info">
+                                <h3>Francis Ford Coppola</h3>
+                                <p class="director-title">El Visionario</p>
+                                <p class="director-origin">EE.UU. • 1939</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Pionero del Nuevo Hollywood, creó algunas de las sagas más
+                                influyentes del cine moderno.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">3</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">5</span>
+                                    <span class="label">Oscars</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>El Padrino</span>
+                                <span>Apocalipsis Now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="director-card">
+                        <div class="card-header">
+                            <div class="director-avatar">MS</div>
+                            <div class="director-info">
+                                <h3>Martin Scorsese</h3>
+                                <p class="director-title">El Cronista Urbano</p>
+                                <p class="director-origin">EE.UU. • 1942</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Maestro del drama urbano y la violencia cinematográfica, retratista
+                                incomparable de la América moderna.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">4</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">1</span>
+                                    <span class="label">Oscar</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>Taxi Driver</span>
+                                <span>Toro Salvaje</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="director-card">
+                        <div class="card-header">
+                            <div class="director-avatar">SK</div>
+                            <div class="director-info">
+                                <h3>Stanley Kubrick</h3>
+                                <p class="director-title">El Perfeccionista</p>
+                                <p class="director-origin">EE.UU. • 1928-1999</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Visionario obsesivo conocido por su perfeccionismo técnico y
+                                narrativas que desafían las convenciones.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">3</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">13</span>
+                                    <span class="label">Películas</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>2001: Odisea del Espacio</span>
+                                <span>El Resplandor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="director-card">
+                        <div class="card-header">
+                            <div class="director-avatar">OW</div>
+                            <div class="director-info">
+                                <h3>Orson Welles</h3>
+                                <p class="director-title">El Genio Precoz</p>
+                                <p class="director-origin">EE.UU. • 1915-1985</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="director-bio">Revolucionó el cine con "Ciudadano Kane" a los 25 años,
+                                estableciendo nuevos estándares narrativos y visuales.</p>
+                            <div class="director-stats-mini">
+                                <div class="stat-mini">
+                                    <span class="number">2</span>
+                                    <span class="label">En Top 100</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="number">25</span>
+                                    <span class="label">Años debut</span>
+                                </div>
+                            </div>
+                            <div class="featured-films">
+                                <span>Ciudadano Kane</span>
+                                <span>Sed de Mal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Línea de tiempo de influencia -->
+                <div class="influence-timeline">
+                    <h3>Línea de Tiempo de Influencia Cinematográfica</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1940s</div>
+                            <div class="timeline-content">
+                                <h4>Era Dorada de Hollywood</h4>
+                                <p>Welles y Hitchcock establecen nuevos estándares</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1950s-60s</div>
+                            <div class="timeline-content">
+                                <h4>Cine de Autor Internacional</h4>
+                                <p>Kurosawa y Fellini expanden el lenguaje cinematográfico</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1970s-80s</div>
+                            <div class="timeline-content">
+                                <h4>Nuevo Hollywood</h4>
+                                <p>Coppola, Scorsese y Kubrick redefinen el cine americano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premios y reconocimientos -->
+        <section id="awards" class="awards-section">
+            <h2 class="section-title">Premios y Reconocimientos</h2>
+
+            <div class="awards-grid">
+                <div class="award-category">
+                    <h3>Más Premios Oscar</h3>
+                    <div class="award-list">
+                        <div class="award-item">
+                            <span class="movie-title">El Señor de los Anillos: El Retorno del Rey</span>
+                            <span class="award-count">11 Oscars</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Titanic</span>
+                            <span class="award-count">11 Oscars</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Ben-Hur</span>
+                            <span class="award-count">11 Oscars</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-category">
+                    <h3>Palma de Oro Cannes</h3>
+                    <div class="award-list">
+                        <div class="award-item">
+                            <span class="movie-title">Pulp Fiction</span>
+                            <span class="award-count">1994</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Apocalipsis Now</span>
+                            <span class="award-count">1979</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Taxi Driver</span>
+                            <span class="award-count">1976</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-category">
+                    <h3>AFI Top 100</h3>
+                    <div class="award-list">
+                        <div class="award-item">
+                            <span class="movie-title">Ciudadano Kane</span>
+                            <span class="award-count">#1 (1998, 2007)</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Casablanca</span>
+                            <span class="award-count">#2 (1998), #3 (2007)</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">El Padrino</span>
+                            <span class="award-count">#3 (1998), #2 (2007)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-category">
+                    <h3>Sight & Sound</h3>
+                    <div class="award-list">
+                        <div class="award-item">
+                            <span class="movie-title">Vértigo</span>
+                            <span class="award-count">#1 (2012, 2022)</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Ciudadano Kane</span>
+                            <span class="award-count">#1 (1962-2002)</span>
+                        </div>
+                        <div class="award-item">
+                            <span class="movie-title">Tokio Story</span>
+                            <span class="award-count">#3 (2012)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curiosidades y trivia -->
+        <section id="trivia" class="trivia-section">
+            <h2 class="section-title">Curiosidades Cinematográficas</h2>
+
+            <div class="trivia-container">
+                <div class="trivia-tabs">
+                    <button class="trivia-tab active" data-tab="production">Producción</button>
+                    <button class="trivia-tab" data-tab="actors">Actores</button>
+                    <button class="trivia-tab" data-tab="records">Récords</button>
+                    <button class="trivia-tab" data-tab="secrets">Secretos</button>
+                </div>
+
+                <div class="trivia-content active" id="production-content">
+                    <div class="trivia-grid">
+                        <div class="trivia-card">
+                            <h4>🎬 Ciudadano Kane</h4>
+                            <p>Orson Welles tenía solo 25 años cuando dirigió esta obra maestra. Fue su primera película
+                                como director.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🏜️ Lawrence de Arabia</h4>
+                            <p>Se filmó en locaciones reales del desierto. La famosa escena del espejismo tardó 2 años
+                                en completarse.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🚁 Apocalipsis Now</h4>
+                            <p>La producción duró 238 días y casi arruina a Coppola. Martin Sheen sufrió un infarto
+                                durante el rodaje.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trivia-content" id="actors-content">
+                    <div class="trivia-grid">
+                        <div class="trivia-card">
+                            <h4>💕 Casablanca</h4>
+                            <p>Humphrey Bogart nunca dijo "Play it again, Sam". La frase real es "Play it, Sam".</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>👑 El Padrino</h4>
+                            <p>Marlon Brando usó algodón en las mejillas para el casting. Luego se creó una prótesis
+                                dental especial.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🔫 Pulp Fiction</h4>
+                            <p>John Travolta revivió su carrera con este papel después de años de declive en Hollywood.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trivia-content" id="records-content">
+                    <div class="trivia-grid">
+                        <div class="trivia-card">
+                            <h4>📊 Película más larga</h4>
+                            <p>Lawrence de Arabia con 228 minutos en su versión completa original.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>💰 Más rentable</h4>
+                            <p>El Padrino recaudó 245 millones con un presupuesto de solo 6 millones de dólares.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🏆 Más nominaciones</h4>
+                            <p>Ciudadano Kane tuvo 9 nominaciones al Oscar, ganando solo por Mejor Guión Original.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trivia-content" id="secrets-content">
+                    <div class="trivia-grid">
+                        <div class="trivia-card">
+                            <h4>🤫 Vértigo</h4>
+                            <p>Hitchcock inventó el "dolly zoom" para esta película, técnica ahora usada en todo el
+                                cine.</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🎨 8½</h4>
+                            <p>El título se refiere al número de películas que Fellini había dirigido hasta entonces (7
+                                completas + 1 mediometraje).</p>
+                        </div>
+                        <div class="trivia-card">
+                            <h4>🌧️ Cantando Bajo la Lluvia</h4>
+                            <p>Gene Kelly tenía fiebre de 39°C durante la famosa escena de baile bajo la lluvia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section></span>
+    </main>
+
+    <!-- Footer expandido -->
+    <footer class="cinema-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🎬 Sobre Este Proyecto</h3>
+                <p>Una celebración del séptimo arte que reúne las obras maestras que han definido la historia del cine
+                    mundial.</p>
+                <div class="footer-stats">
+                    <span>100 Películas</span>
+                    <span>80+ Años de Cine</span>
+                    <span>50+ Directores</span>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>🏆 Criterios de Selección</h3>
+                <ul>
+                    <li>Impacto cultural e histórico</li>
+                    <li>Innovación técnica y artística</li>
+                    <li>Influencia en cineastas posteriores</li>
+                    <li>Reconocimiento crítico internacional</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>📚 Fuentes</h3>
+                <ul>
+                    <li>Sight & Sound Critics' Poll</li>
+                    <li>American Film Institute</li>
+                    <li>Cahiers du Cinéma</li>
+                    <li>British Film Institute</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>🎭 Conecta</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">📧 Email</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">📸 Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="film-reel-footer"></div>
+            <p>&copy; 2024 Las 100 Mejores Películas - Una celebración del séptimo arte</p>
+            <p class="footer-quote">"El cine es una máquina de generar empatía" - Roger Ebert</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

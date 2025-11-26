@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 100 Mejores Películas de Todos los Tiempos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar sticky estilo Substack -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+                <i class="fas fa-film"></i>
+                <span>CineClub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a></li>
+                <li><a href="#top10" class="nav-link">Top 10</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#decades" class="nav-link">Décadas</a></li>
+                <li><a href="#directors" class="nav-link">Directores</a></li>
+                <li><a href="#comments" class="nav-link">Comentarios</a></li>
+            </ul>
+            <button class="subscribe-btn" onclick="openSubscribeModal()">
+                <i class="fas fa-envelope"></i>
+                <span>Suscribirse</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header estilo Substack -->
+    <header class="substack-header">
+        <div class="header-content">
+            <div class="header-badge">Newsletter de Cine</div>
+            <h1 class="main-title">Las 100 Mejores Películas de Todos los Tiempos</h1>
+            <p class="subtitle">Tu guía definitiva del séptimo arte. Análisis, reseñas y todo sobre las películas que
+                cambiaron el cine para siempre.</p>
+            <div class="header-actions">
+                <button class="cta-primary" onclick="openSubscribeModal()">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Suscríbete gratis</span>
+                </button>
+                <span class="subscribers-count">
+                    <i class="fas fa-fire"></i>
+                    <span id="subscriberCount">+2,500 cinéfilos ya suscritos</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="article-content">
+        <!-- Introducción editorial -->
+        <section class="intro-section">
+            <p class="lead-paragraph">Las diez obras maestras que han definido el séptimo arte y continúan inspirando a
+                cineastas de todo el mundo. Esta selección representa lo mejor del cine mundial, desde los clásicos de
+                Hollywood hasta las revoluciones cinematográficas contemporáneas.</p>
+        </section>
+
+        <!-- Top 10 estilo lista editorial -->
+        <section id="top10" class="top-section">
+            <h2 class="section-heading">Las 10 Películas Esenciales</h2>
+
+            <article class="movie-entry featured"></article>
+            <div class="entry-number">1</div>
+            <div class="entry-content">
+                <h3 class="movie-title">Ciudadano Kane</h3>
+                <div class="movie-meta">
+                    <span class="year">1941</span>
+                    <span class="separator">·</span>
+                    <span class="director">Orson Welles</span>
+                    <span class="separator">·</span>
+                    <span class="duration">119 min</span>
+                    <span class="separator">·</span>
+                    <span class="country">Estados Unidos</span>
+                </div>
+                <p class="movie-description">La obra maestra de Orson Welles que revolucionó el lenguaje cinematográfico
+                    con su narrativa innovadora y técnicas visuales sin precedentes. A los 25 años, Welles creó una
+                    película que estableció nuevos estándares en profundidad de campo, uso de luz y sombra, y estructura
+                    narrativa no lineal.</p>
+                <div class="movie-highlights">
+                    <p><strong>Por qué es esencial:</strong> Introdujo técnicas revolucionarias como el uso dramático de
+                        techos en los encuadres, profundidad de campo extrema y narrativa fragmentada que influyeron en
+                        generaciones de cineastas.</p>
+                    <p><strong>Legado:</strong> Considerada durante décadas como la mejor película jamás realizada por
+                        críticos de todo el mundo.</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="movie-entry featured"></article>
+            <div class="entry-number">2</div>
+            <div class="entry-content">
+                <h3 class="movie-title">Casablanca</h3>
+                <div class="movie-meta">
+                    <span class="year">1942</span>
+                    <span class="separator">·</span>
+                    <span class="director">Michael Curtiz</span>
+                    <span class="separator">·</span>
+                    <span class="duration">102 min</span>
+                    <span class="separator">·</span>
+                    <span class="country">Estados Unidos</span>
+                </div>
+                <p class="movie-description">El romance eterno en tiempos de guerra que conquistó corazones y estableció
+                    el estándar del cine clásico de Hollywood. La química entre Humphrey Bogart e Ingrid Bergman creó
+                    uno de los romances más memorables de la historia del cine.</p>
+                <div class="movie-highlights">
+                    <p><strong>Por qué es esencial:</strong> Perfección del sistema de estudios de Hollywood, con
+                        diálogos icónicos, actuaciones impecables y una historia que equilibra romance, drama político y
+                        sacrificio personal.</p>
+                    <p><strong>Frase memorable:</strong> "Here's looking at you, kid" se convirtió en una de las líneas
+                        más citadas del cine.</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="movie-entry featured"></article>
+            <div class="entry-number">3</div>
+            <div class="entry-content">
+                <h3 class="movie-title">El Padrino</h3>
+                <div class="movie-meta">
+                    <span class="year">1972</span>
+                    <span class="separator">·</span>
+                    <span class="director">Francis Ford Coppola</span>
+                    <span class="separator">·</span>
+                    <span class="duration">175 min</span>
+                    <span class="separator">·</span>
+                    <span class="country">Estados Unidos</span>
+                </div>
+                <p class="movie-description">La saga familiar que redefinió el cine de gángsters para siempre,
+                    combinando drama shakespeariano con realismo brutal. Marlon Brando y Al Pacino entregan actuaciones
+                    legendarias en esta épica sobre poder, familia y el sueño americano.</p>
+                <div class="movie-highlights">
+                    <p><strong>Por qué es esencial:</strong> Transformó el género de gángsters en tragedia operática,
+                        explorando temas de lealtad familiar, corrupción moral y el precio del poder con una profundidad
+                        sin precedentes.</p>
+                    <p><strong>Impacto cultural:</strong> Ganó 3 Oscars y se convirtió en la película más influyente de
+                        los años 70, estableciendo el modelo del blockbuster artístico.</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">4</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">Vértigo</h3>
+                    <div class="movie-meta">
+                        <span class="year">1958</span>
+                        <span class="separator">·</span>
+                        <span class="director">Alfred Hitchcock</span>
+                        <span class="separator">·</span>
+                        <span class="duration">128 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Estados Unidos</span>
+                    </div>
+                    <p class="movie-description">El thriller psicológico de Hitchcock que explora la obsesión y el deseo
+                        con una maestría visual incomparable. La historia de un detective con acrofobia que se obsesiona
+                        con una mujer misteriosa.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Innovación técnica:</strong> Hitchcock inventó el "dolly zoom" para esta película,
+                            técnica que se usa hasta hoy para representar vértigo y desorientación.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">5</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">8½</h3>
+                    <div class="movie-meta">
+                        <span class="year">1963</span>
+                        <span class="separator">·</span>
+                        <span class="director">Federico Fellini</span>
+                        <span class="separator">·</span>
+                        <span class="duration">138 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Italia</span>
+                    </div>
+                    <p class="movie-description">La reflexión autobiográfica de Fellini sobre el arte y la creatividad,
+                        una obra maestra del cine de autor europeo. Un director en crisis creativa mezcla realidad,
+                        memoria y fantasía.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Título único:</strong> El nombre se refiere al número de películas que Fellini había
+                            dirigido: 7 completas + 1 mediometraje = 8½.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">6</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">Cantando Bajo la Lluvia</h3>
+                    <div class="movie-meta">
+                        <span class="year">1952</span>
+                        <span class="separator">·</span>
+                        <span class="director">Gene Kelly & Stanley Donen</span>
+                        <span class="separator">·</span>
+                        <span class="duration">103 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Estados Unidos</span>
+                    </div>
+                    <p class="movie-description">El musical que celebra la alegría pura del cine y la danza, considerado
+                        el mejor musical jamás filmado. Una sátira brillante sobre la transición del cine mudo al
+                        sonoro.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Escena icónica:</strong> Gene Kelly bailó la famosa escena bajo la lluvia con fiebre
+                            de 39°C, creando uno de los momentos más memorables del cine.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">7</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">Lawrence de Arabia</h3>
+                    <div class="movie-meta">
+                        <span class="year">1962</span>
+                        <span class="separator">·</span>
+                        <span class="director">David Lean</span>
+                        <span class="separator">·</span>
+                        <span class="duration">228 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Reino Unido</span>
+                    </div>
+                    <p class="movie-description">La épica aventura de David Lean en el desierto árabe, una proeza
+                        cinematográfica de escala monumental. Peter O'Toole brilla como T.E. Lawrence en esta biografía
+                        épica.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Escala épica:</strong> Filmada en locaciones reales del desierto, la producción tardó
+                            2 años y estableció nuevos estándares para el cine épico.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">8</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">El Padrino II</h3>
+                    <div class="movie-meta">
+                        <span class="year">1974</span>
+                        <span class="separator">·</span>
+                        <span class="director">Francis Ford Coppola</span>
+                        <span class="separator">·</span>
+                        <span class="duration">202 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Estados Unidos</span>
+                    </div>
+                    <p class="movie-description">La continuación que superó al original en profundidad y complejidad,
+                        entrelazando dos épocas magistralmente. La historia paralela de Michael Corleone y su padre
+                        Vito.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Secuela perfecta:</strong> Una de las pocas secuelas que rivaliza o supera a su
+                            predecesora, ganando 6 Oscars incluyendo Mejor Película.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">9</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">Pulp Fiction</h3>
+                    <div class="movie-meta">
+                        <span class="year">1994</span>
+                        <span class="separator">·</span>
+                        <span class="director">Quentin Tarantino</span>
+                        <span class="separator">·</span>
+                        <span class="duration">154 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Estados Unidos</span>
+                    </div>
+                    <p class="movie-description">Tarantino revoluciona el cine con narrativa no lineal y diálogos únicos
+                        que redefinieron el cine independiente. Historias entrelazadas del submundo criminal de Los
+                        Ángeles.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Impacto cultural:</strong> Revitalizó el cine independiente de los 90 y lanzó una
+                            nueva era de directores autores. Ganó la Palma de Oro en Cannes.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-entry">
+                <div class="entry-number">10</div>
+                <div class="entry-content">
+                    <h3 class="movie-title">Apocalipsis Now</h3>
+                    <div class="movie-meta">
+                        <span class="year">1979</span>
+                        <span class="separator">·</span>
+                        <span class="director">Francis Ford Coppola</span>
+                        <span class="separator">·</span>
+                        <span class="duration">147 min</span>
+                        <span class="separator">·</span>
+                        <span class="country">Estados Unidos</span>
+                    </div>
+                    <p class="movie-description">La pesadilla de la guerra de Vietnam vista por Coppola, una experiencia
+                        cinematográfica visceral e inolvidable. Adaptación libre de "El corazón de las tinieblas" de
+                        Joseph Conrad.</p>
+                    <div class="movie-highlights">
+                        <p><strong>Producción legendaria:</strong> La filmación duró 238 días en Filipinas, casi arruinó
+                            a Coppola, y Martin Sheen sufrió un infarto durante el rodaje.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section id="blog" class="blog-section">
+            <div class="section-header-blog">
+                <h2 class="section-heading">
+                    <i class="fas fa-pen-fancy"></i>
+                    Últimas del Blog
+                </h2>
+                <p class="section-subtitle">Análisis profundos, curiosidades y debates sobre cine</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card featured-post">
+                    <div class="blog-tag">Destacado</div>
+                    <h3 class="blog-title">Por qué Vértigo superó a Ciudadano Kane como la mejor película de la historia
+                    </h3>
+                    <p class="blog-excerpt">En 2012, algo histórico sucedió: después de 50 años en el primer lugar,
+                        Ciudadano Kane fue destronada. Exploramos las razones detrás de este cambio sísmico en la
+                        crítica cinematográfica...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por Ana Martínez</span>
+                        <span class="blog-date">20 nov 2024</span>
+                        <span class="blog-read-time">8 min lectura</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-tag">Análisis</div>
+                    <h3 class="blog-title">El Padrino: Cómo Coppola convirtió un libro pulp en alta literatura
+                        cinematográfica</h3>
+                    <p class="blog-excerpt">La novela de Mario Puzo era considerada entretenimiento de aeropuerto.
+                        Coppola la transformó en una tragedia shakespeariana sobre el poder y la familia...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por Carlos Ruiz</span>
+                        <span class="blog-date">18 nov 2024</span>
+                        <span class="blog-read-time">6 min lectura</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-tag">Curiosidades</div>
+                    <h3 class="blog-title">10 datos que no sabías sobre Pulp Fiction</h3>
+                    <p class="blog-excerpt">Desde el maletín misterioso hasta el baile de Uma Thurman: los secretos
+                        detrás de la película que revitalizó el cine independiente en los 90...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por Laura Gómez</span>
+                        <span class="blog-date">15 nov 2024</span>
+                        <span class="blog-read-time">5 min lectura</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-tag">Debate</div>
+                    <h3 class="blog-title">¿El cine moderno puede competir con los clásicos?</h3>
+                    <p class="blog-excerpt">Parasite ganó el Oscar. Nomadland conquistó la crítica. ¿Por qué las listas
+                        de "mejores películas" siguen dominadas por films de hace 50 años?...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por Miguel Torres</span>
+                        <span class="blog-date">12 nov 2024</span>
+                        <span class="blog-read-time">7 min lectura</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-tag">Entrevista</div>
+                    <h3 class="blog-title">Conversando con críticos: ¿Qué hace que una película sea "grande"?</h3>
+                    <p class="blog-excerpt">Hablamos con cinco críticos de cine sobre los criterios que usan para
+                        evaluar películas y por qué algunos films resisten el paso del tiempo...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por Sofía Mendoza</span>
+                        <span class="blog-date">10 nov 2024</span>
+                        <span class="blog-read-time">10 min lectura</span>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-tag">Guía</div>
+                    <h3 class="blog-title">Cómo empezar a ver cine clásico (sin aburrirte)</h3>
+                    <p class="blog-excerpt">Una guía práctica para adentrarte en el cine clásico. Desde dónde empezar
+                        hasta cómo apreciar películas de otra época sin que se sientan anticuadas...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">Por David Ramos</span>
+                        <span class="blog-date">8 nov 2024</span>
+                        <span class="blog-read-time">6 min lectura</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta">
+                <h3>¿Te gustó este contenido?</h3>
+                <p>Suscríbete para recibir análisis semanales de cine directo en tu inbox</p>
+                <button class="cta-secondary">Suscribirme gratis</button>
+            </div>
+        </section>
+
+        <!-- Análisis por décadas -->section></div>h3>article></p>
+        </h3>
+        </article>span></div>
+        </article>
+        <section id="decades" class="decades-section">
+            <h2 class="section-heading">Un Recorrido por las Décadas</h2>
+
+            <div class="decade-analysis">
+                <h3 class="decade-title">Años 40: La Era Dorada</h3>
+                <p class="decade-text">Ciudadano Kane (1941) y Casablanca (1942) establecieron los estándares del cine
+                    clásico. La década vio el nacimiento del cine noir y el perfeccionamiento del sistema de estudios de
+                    Hollywood.</p>
+                <ul class="movie-list-simple">
+                    <li><strong>Ciudadano Kane</strong> — 1941, Orson Welles</li>
+                    <li><strong>Casablanca</strong> — 1942, Michael Curtiz</li>
+                    <li><strong>Los Mejores Años de Nuestras Vidas</strong> — 1946, William Wyler</li>
+                </ul>
+            </div>
+
+            <div class="decade-analysis">
+                <h3 class="decade-title">Años 50: El Cine de Autor</h3>
+                <p class="decade-text">Hitchcock perfecciona el suspense mientras el cine europeo florece. La década
+                    marca el inicio de la nouvelle vague y el cine de autor internacional.</p>
+                <ul class="movie-list-simple">
+                    <li><strong>Cantando Bajo la Lluvia</strong> — 1952, Gene Kelly & Stanley Donen</li>
+                    <li><strong>Vértigo</strong> — 1958, Alfred Hitchcock</li>
+                    <li><strong>Los Siete Samuráis</strong> — 1954, Akira Kurosawa</li>
+                </ul>
+            </div>
+
+            <div class="decade-analysis">
+                <h3 class="decade-title">Años 60-70: La Revolución</h3>
+                <p class="decade-text">El Nuevo Hollywood transforma el cine americano. Directores como Coppola,
+                    Scorsese y Kubrick desafían las convenciones narrativas y visuales.</p>
+                <ul class="movie-list-simple">
+                    <li><strong>8½</strong> — 1963, Federico Fellini</li>
+                    <li><strong>Lawrence de Arabia</strong> — 1962, David Lean</li>
+                    <li><strong>El Padrino</strong> — 1972, Francis Ford Coppola</li>
+                    <li><strong>Apocalipsis Now</strong> — 1979, Francis Ford Coppola</li>
+                </ul>
+            </div>
+
+            <div class="decade-analysis">
+                <h3 class="decade-title">Años 90-2000: El Cine Contemporáneo</h3>
+                <p class="decade-text">Tarantino y otros directores independientes revitalizan el cine con narrativas no
+                    lineales y referencias posmodernas.</p>
+                <ul class="movie-list-simple">
+                    <li><strong>Pulp Fiction</strong> — 1994, Quentin Tarantino</li>
+                    <li><strong>El Señor de los Anillos</strong> — 2001-2003, Peter Jackson</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Directores destacados -->
+        <section id="directors" class="directors-section">
+            <h2 class="section-heading">Los Maestros del Cine</h2>
+
+            <article class="director-profile">
+                <h3 class="director-name">Alfred Hitchcock</h3>
+                <p class="director-years">1899 - 1980</p>
+                <p class="director-bio">Revolucionó el thriller cinematográfico con técnicas innovadoras como el
+                    "MacGuffin" y el montaje psicológico. Sus 39 películas incluyen algunas de las obras más estudiadas
+                    en la historia del cine.</p>
+                <p class="director-films"><strong>Obras destacadas:</strong> Vértigo, Psicosis, La Ventana Indiscreta,
+                    Con la Muerte en los Talones</p>
+            </article>
+
+            <article class="director-profile">
+                <h3 class="director-name">Akira Kurosawa</h3>
+                <p class="director-years">1910 - 1998</p>
+                <p class="director-bio">Maestro del cine épico japonés, influyó profundamente en directores occidentales
+                    como Spielberg y Lucas. Su dominio de la composición visual y la narrativa épica estableció nuevos
+                    estándares.</p>
+                <p class="director-films"><strong>Obras destacadas:</strong> Los Siete Samuráis, Rashomon, Ikiru</p>
+            </article>
+
+            <article class="director-profile">
+                <h3 class="director-name">Federico Fellini</h3>
+                <p class="director-years">1920 - 1993</p>
+                <p class="director-bio">Creador de un universo cinematográfico único que mezcló realidad y fantasía de
+                    manera magistral. Su estilo visual barroco y narrativas oníricas definieron el cine de autor
+                    italiano.</p>
+                <p class="director-films"><strong>Obras destacadas:</strong> 8½, La Dolce Vita, Amarcord</p>
+            </article>
+
+            <article class="director-profile">
+                <h3 class="director-name">Francis Ford Coppola</h3>
+                <p class="director-years">1939 - presente</p>
+                <p class="director-bio">Pionero del Nuevo Hollywood, creó algunas de las sagas más influyentes del cine
+                    moderno. Su ambición narrativa y visual transformó el cine americano de los años 70.</p>
+                <p class="director-films"><strong>Obras destacadas:</strong> El Padrino, El Padrino II, Apocalipsis Now
+                </p>
+            </article>
+
+            <article class="director-profile">
+                <h3 class="director-name">Martin Scorsese</h3>
+                <p class="director-years">1942 - presente</p>
+                <p class="director-bio">Maestro del drama urbano y retratista incomparable de la América moderna. Su
+                    exploración de la violencia, la redención y la identidad ha definido generaciones de cine.</p>
+                <p class="director-films"><strong>Obras destacadas:</strong> Taxi Driver, Toro Salvaje, Buenos Muchachos
+                </p>
+            </article>
+
+            <article class="director-profile">
+                <h3 class="director-name">Stanley Kubrick</h3>
+                <p class="director-years">1928 - 1999</p>
+                <p class="director-bio">Visionario obsesivo conocido por su perfeccionismo técnico y narrativas que
+                    desafían las convenciones. Cada una de sus películas exploró nuevos territorios cinematográficos.
+                </p>
+                <p class="director-films"><strong>Obras destacadas:</strong> 2001: Odisea del Espacio, El Resplandor, La
+                    Naranja Mecánica</p>
+            </article>
+        </section>
+
+        <!-- Reconocimientos -->
+        <section id="awards" class="awards-section">
+            <h2 class="section-heading">Reconocimientos Críticos</h2>
+
+            <div class="awards-text">
+                <p><strong>Sight & Sound:</strong> Vértigo ocupó el primer lugar en las encuestas de 2012 y 2022,
+                    destronando a Ciudadano Kane que había mantenido la posición desde 1962.</p>
+
+                <p><strong>American Film Institute:</strong> Ciudadano Kane y El Padrino han alternado las primeras
+                    posiciones en las listas del AFI desde 1998.</p>
+
+                <p><strong>Palma de Oro en Cannes:</strong> Pulp Fiction (1994), Apocalipsis Now (1979) y Taxi Driver
+                    (1976) representan el reconocimiento europeo al cine americano innovador.</p>
+            </div>
+        </section>
+
+        <!-- Notas finales -->
+        <section class="notes-section">
+            <h2 class="section-heading">Nota Metodológica</h2>
+            <p class="notes-text">Esta selección se basa en las principales encuestas críticas internacionales,
+                incluyendo Sight & Sound, el American Film Institute, Cahiers du Cinéma y el British Film Institute. Los
+                criterios consideran el impacto cultural e histórico, la innovación técnica y artística, y la influencia
+                en generaciones posteriores de cineastas.</p>
+        </section>
+
+        <!-- Sección de comentarios -->
+        <section id="comments" class="comments-section">
+            <h2 class="section-heading">Comentarios</h2>
+            <p class="comments-intro">Comparte tu opinión sobre esta selección. ¿Qué película agregarías o quitarías?
+            </p>
+
+            <div class="comment-form">
+                <h3 class="form-title">Deja tu comentario</h3>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comentario</label>
+                        <textarea id="comment" name="comment" rows="5" required
+                            placeholder="Escribe tu opinión..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Publicar comentario</button>
+                </form>
+            </div>
+
+            <div class="comments-list">
+                <h3 class="comments-title">Comentarios de lectores</h3>
+
+                <article class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">María González</span>
+                        <span class="comment-date">25 de noviembre, 2024</span>
+                    </div>
+                    <p class="comment-text">Excelente selección. Me alegra ver que Vértigo finalmente recibe el
+                        reconocimiento que merece. La escena de la escalera es puro cine.</p>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">Carlos Ramírez</span>
+                        <span class="comment-date">24 de noviembre, 2024</span>
+                    </div>
+                    <p class="comment-text">Echo de menos películas más recientes. ¿Dónde está Parasite o Moonlight? El
+                        cine no terminó en los 90.</p>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">Ana Martínez</span>
+                        <span class="comment-date">23 de noviembre, 2024</span>
+                    </div>
+                    <p class="comment-text">El Padrino en el top 3 es indiscutible. Una obra maestra que mejora con cada
+                        visionado. La fotografía de Gordon Willis es sublime.</p>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">Jorge Silva</span>
+                        <span class="comment-date">22 de noviembre, 2024</span>
+                    </div>
+                    <p class="comment-text">Me sorprende que 2001: Odisea del Espacio no esté en el top 10. Kubrick
+                        revolucionó la ciencia ficción cinematográfica.</p>
+                </article>
+
+                <div id="newComments"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer minimalista -->
+    <footer class="nyt-footer">
+        <div class="footer-border"></div>
+        <div class="footer-content">
+            <p class="footer-text">© 2024 Las 100 Mejores Películas</p>
+            <p class="footer-links">
+                <a href="#">Contacto</a>
+                <span class="separator">·</span>
+                <a href="#">Metodología</a>
+                <span class="separator">·</span>
+                <a href="#">Fuentes</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal de Suscripción -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeSubscribeModal()">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h2>Únete a CineClub</h2>
+                <p>Recibe análisis exclusivos de cine cada semana</p>
+            </div>
+            <form id="modalSubscribeForm" class="modal-form">
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="subscribeName" placeholder="Tu nombre" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="subscribeEmail" placeholder="tu@email.com" required>
+                </div>
+                <div class="modal-benefits">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        <i class="fas fa-check-square"></i>
+                        <span>Análisis semanales de películas</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        <i class="fas fa-check-square"></i>
+                        <span>Recomendaciones personalizadas</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        <i class="fas fa-check-square"></i>
+                        <span>Acceso a contenido exclusivo</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-modal-submit">
+                    <span>Suscribirme gratis</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <p class="modal-note">
+                    <i class="fas fa-shield-alt"></i>
+                    Gratis para siempre. Sin spam. Cancela cuando quieras.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
